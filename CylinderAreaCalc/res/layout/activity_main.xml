@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/textView3"
@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Zylinder berechnen"
+        android:text="Zylindermaße eingeben"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -20,7 +20,7 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Gebe bitte den Zylinder Radius und die Zylinder Höhe an!"
+        android:text="Gebe bitte den Radius und die Höhe des Zylinders an!"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -83,5 +83,14 @@
         android:layout_alignBottom="@+id/button1"
         android:layout_toRightOf="@+id/button1"
         android:text="Felder zurücksetzten" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2dp"
+        android:src="@android:drawable/ic_menu_info_details" />
 
 </RelativeLayout>
