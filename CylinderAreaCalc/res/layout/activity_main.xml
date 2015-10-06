@@ -84,13 +84,4 @@
         android:layout_toRightOf="@+id/button1"
         android:text="Felder zurücksetzten" />
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="2dp"
-        android:src="@android:drawable/ic_menu_info_details" />
-
 </RelativeLayout>
