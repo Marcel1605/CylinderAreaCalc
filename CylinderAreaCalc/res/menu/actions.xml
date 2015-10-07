@@ -4,6 +4,11 @@
           android:icon="@android:drawable/ic_menu_info_details"
           android:title="@string/help_button_title"
           android:orderInCategory="100"
+          android:showAsAction="always"      
+      />   
+      <item android:id="@+id/impressum_button"
+          android:title="@string/button_impressum"
+          android:orderInCategory="100"
           android:showAsAction="never"      
     />   
 </menu>

@@ -3,5 +3,6 @@
 
     <string name="app_name">CylinderAreaCalc</string>
     <string name="help_button_title">Hilfe</string>
+    <string name="button_impressum">Impressum</string>
 
 </resources>
