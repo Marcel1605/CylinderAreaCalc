@@ -142,5 +142,23 @@
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginTop="20dp"
 	    android:ems="5" />
+
+	<Button
+	    android:id="@+id/backbutton1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/editText7"
+	    android:layout_marginTop="35dp"
+	    android:text="Zurück" />
+	
+	<Button
+        android:id="@+id/backbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backbutton1"
+        android:layout_alignBottom="@+id/backbutton1"
+        android:layout_toRightOf="@+id/backbutton1"
+        android:text="Neue Berechnung" />
     
 </RelativeLayout>

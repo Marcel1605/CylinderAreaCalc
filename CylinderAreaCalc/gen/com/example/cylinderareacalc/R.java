@@ -15,6 +15,8 @@ public final class R {
         public static final int ic_stat_name=0x7f020001;
     }
     public static final class id {
+        public static final int backbutton1=0x7f070015;
+        public static final int backbutton2=0x7f070016;
         public static final int button1=0x7f070006;
         public static final int button2=0x7f070007;
         public static final int editText1=0x7f070003;
@@ -24,8 +26,8 @@ public final class R {
         public static final int editText5=0x7f070012;
         public static final int editText6=0x7f070013;
         public static final int editText7=0x7f070014;
-        public static final int help_button=0x7f070015;
-        public static final int impressum_button=0x7f070016;
+        public static final int help_button=0x7f070017;
+        public static final int impressum_button=0x7f070018;
         public static final int resultview1=0x7f070008;
         public static final int resultview2=0x7f070009;
         public static final int resultview3=0x7f07000a;
