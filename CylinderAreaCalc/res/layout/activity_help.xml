@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/helpview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpview5"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/zylinder_bild" />
+
+    <TextView
+        android:id="@+id/helpview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpview1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="Ein Zylinder ist ein Körper, der von 2 kongruenten, parallelen, krummlinig begrenzten (Grund-)Flächen und der sie verbindenden Mantelfläche begrenzt wird. Sonderfälle sind der gerade und der schiefe Kreiszylinder"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/helpview1"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Allgemeine Infos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+        <TextView
+        android:id="@+id/helpview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpview3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Bedienungshilfe"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+        android:id="@+id/helpview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpview4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="In die vorhergesehenen Felder Radius und Höhe, die entsprechenden Anageben des Zylinders eintragen. Zum Berechnen der Größen Volumen, Oberfläche, Mantelfläche, Grundfläche und Umfang den Berechnen-Button betätigen. Nach der Anzeige der Ergebnisse kann zwischen einer komplett neuen Berechnung (Neue Berechnung-Button) oder einer Korrektur der Daten (Zurück-Button) gewählt werden. In zweiterem Fall können die Werte mit Hilfe des Felder-Zurücksetzen-Buttons gelöscht werden"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+</RelativeLayout>
