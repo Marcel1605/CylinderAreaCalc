@@ -22,8 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:screenOrientation="portrait" android:launchMode="standard" android:name="HelpActivity" android:theme="@style/AppBaseTheme"></activity>
-        <activity android:name="Result_Activity" android:launchMode="standard" android:theme="@style/AppBaseTheme" android:screenOrientation="portrait"></activity>
+        <activity android:screenOrientation="portrait" android:launchMode="standard" android:name=".HelpActivity" android:theme="@style/AppBaseTheme"></activity>
+        <activity android:name=".ResultActivity" android:launchMode="standard" android:theme="@style/AppBaseTheme" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
