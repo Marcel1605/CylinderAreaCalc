@@ -2,6 +2,8 @@ package com.example.cylinderareacalc;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 public class HelpActivity extends Activity {
 
@@ -13,5 +15,11 @@ public class HelpActivity extends Activity {
 	
 	    // TODO Auto-generated method stub
 	}
-
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.actions, menu);
+ 
+        return super.onCreateOptionsMenu(menu); 
+    }
 }
