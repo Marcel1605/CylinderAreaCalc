@@ -46,19 +46,46 @@ public class ResultActivity extends Activity implements OnClickListener{
  
         return super.onCreateOptionsMenu(menu); 
     }
+	
 	@Override
 	public void onClick(View v) {
 		int view = v.getId();
-		// TODO Auto-generated method stub
 		
+		//Der Zurück-Button gibt die vom Nutzer auf der MainActivity angegebenen Werte wieder zurück
 		if ( view == R.id.backbutton1){
-			finish();
+			EditText et1 = (EditText) findViewById(R.id.editText1);
+			String radiusZurueckgeben = et1.getText().toString();
+			
+			EditText et2 = (EditText) findViewById(R.id.editText2);
+	  		String hoeheZurueckgeben = et2.getText().toString();
+	  		
+	  		Intent intent = new Intent();
+	  		intent.putExtra("rueckgabeRadius", radiusZurueckgeben);
+	  		intent.putExtra("rueckgabeHoehe", hoeheZurueckgeben);
+	  		setResult(RESULT_OK, intent);
+	  		finish();			
 		}
+		
+		//Der "neue Berechnung" Button ruft die MainActivity mit leeren Eingabefeldern auf
 		else if ( view == R.id.backbutton2){
 			Intent i = new Intent(ResultActivity.this, MainActivity.class);
 			startActivity(i);
 			finish();
 		}
 	}
-	
+	//Zurück-Button des Systems soll dasselbe bewirken wie backbutton1
+	@Override
+	public void onBackPressed(){
+		EditText et1 = (EditText) findViewById(R.id.editText1);
+		String radiusZurueckgeben = et1.getText().toString();
+		
+		EditText et2 = (EditText) findViewById(R.id.editText2);
+  		String hoeheZurueckgeben = et2.getText().toString();
+  		
+  		Intent intent = new Intent();
+  		intent.putExtra("rueckgabeRadius", radiusZurueckgeben);
+  		intent.putExtra("rueckgabeHoehe", hoeheZurueckgeben);
+  		setResult(RESULT_OK, intent);
+  		finish();
+	}
 }
