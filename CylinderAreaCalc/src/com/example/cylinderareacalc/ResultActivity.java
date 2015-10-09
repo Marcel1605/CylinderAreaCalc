@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class ResultActivity extends Activity implements OnClickListener{
 	
@@ -19,15 +20,25 @@ public class ResultActivity extends Activity implements OnClickListener{
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.activity_result);
-	    // TODO Auto-generated method stub
-	    
+	  
 	  //Referenzen auf View Elemente abfragen
 	  		_button1 = (Button) findViewById(R.id.backbutton1);
 	  		_button2 = (Button) findViewById(R.id.backbutton2);
 	  		
 	  		_button1.setOnClickListener(this);
 	  		_button2.setOnClickListener(this);
+	  		
+	 //Von MainActivity übergebene Werte zur Anzeige bringen
+	  		Intent intent = getIntent();
+	  		Bundle bundleExtras = intent.getExtras();
+	  		String uebergebenerRadius = bundleExtras.getString("eingabeRadius");
+	  		EditText et1 = (EditText) findViewById(R.id.editText1);
+	  		et1.setText(uebergebenerRadius);
+	  		String uebergebeneHoehe = bundleExtras.getString("eingabeHoehe");
+	  		EditText et2 = (EditText) findViewById(R.id.editText2);
+	  		et2.setText(uebergebeneHoehe);
 	}
+	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
