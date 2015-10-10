@@ -88,7 +88,7 @@ public class MainActivity extends Activity {
   		et2.setText(zurueckkommendeHoehe);
 		}
 		
-	
+	//Menüleiste mit Hilfe-Icon und Impressum
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
 	        MenuInflater inflater = getMenuInflater();
@@ -96,6 +96,27 @@ public class MainActivity extends Activity {
 	 
 	        return super.onCreateOptionsMenu(menu); 
 	    }
+	 
+	 //Aufrufen der HelpActivity bzw. der ImpressumActivity falls entsprechende Option im Menü gewählt wird
+	 @Override
+		public boolean onOptionsItemSelected(MenuItem item) {
+		    switch (item.getItemId()) {
+		        case R.id.help_button:
+		        		Intent intent1 = new Intent(this, HelpActivity.class);
+		        		startActivity(intent1);
+		        		return true;
+		        	
+		        	//Impressum Activity aufrufen
+			/*
+			            case R.id.impressum_button:
+			        	Intent intent2 = new Intent(this, ImpressumActivity.class);
+			        	startActivity(intent2);	
+			        	return true;
+			*/
+		        default:
+		            return super.onOptionsItemSelected(item);
+		    }
+		}
 	
 	 //Der System-Zurück-Button auf der MainActivity ruft ein Dialogfeld hervor, dass den User fragt ob er die App wirklich beenden möchte
 	 @Override

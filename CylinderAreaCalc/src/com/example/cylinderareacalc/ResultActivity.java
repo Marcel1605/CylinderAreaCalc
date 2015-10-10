@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -79,6 +80,8 @@ public class ResultActivity extends Activity implements OnClickListener{
 	  	  et7.setText(volumen);
 	  	  		  	
 	}
+	
+	//Menüleiste mit Hilfe-Icon und Impressum
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -86,6 +89,27 @@ public class ResultActivity extends Activity implements OnClickListener{
  
         return super.onCreateOptionsMenu(menu); 
     }
+	
+	//Aufrufen der HelpActivity bzw. der ImpressumActivity falls entsprechende Option im Menü gewählt wird
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.help_button:
+				Intent intent1 = new Intent(this, HelpActivity.class);
+			    startActivity(intent1);
+			    return true;
+			        	
+			//Impressum Activity aufrufen
+	/*
+			case R.id.impressum_button:
+				Intent intent2 = new Intent(this, ImpressumActivity.class);
+				startActivity(intent2);	
+				return true;
+	*/
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
 	
 	@Override
 	public void onClick(View v) {
@@ -109,8 +133,8 @@ public class ResultActivity extends Activity implements OnClickListener{
 		//Der "neue Berechnung" Button ruft die MainActivity mit leeren Eingabefeldern auf
 		else if ( view == R.id.backbutton2){
 			Intent i = new Intent(ResultActivity.this, MainActivity.class);
-			startActivity(i);
-			finish();
+			i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	        startActivity(i);
 		}
 	}
 	//Zurück-Button des Systems soll dasselbe bewirken wie backbutton1
