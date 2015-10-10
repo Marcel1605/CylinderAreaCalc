@@ -98,56 +98,61 @@
 
 	<EditText
 	    android:id="@+id/editText3"
-	    android:editable="false"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignBaseline="@+id/resultview4"
 	    android:layout_alignBottom="@+id/resultview4"
-	    android:layout_centerHorizontal="true"
+	    android:layout_alignRight="@+id/resultview1"
+	    android:layout_toRightOf="@+id/resultview6"
+	    android:editable="false"
 	    android:ems="5" />
 
 	<EditText
 	    android:id="@+id/editText4"
-	    android:editable="false"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignBaseline="@+id/resultview5"
 	    android:layout_alignBottom="@+id/resultview5"
-	    android:layout_centerHorizontal="true"
+	    android:layout_alignLeft="@+id/editText3"
+	    android:layout_alignRight="@+id/resultview1"
 	    android:layout_marginTop="20dp"
+	    android:editable="false"
 	    android:ems="5" />
 	
 	<EditText
 	    android:id="@+id/editText5"
-	    android:editable="false"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignBaseline="@+id/resultview6"
 	    android:layout_alignBottom="@+id/resultview6"
-	    android:layout_centerHorizontal="true"
+	    android:layout_alignLeft="@+id/editText4"
+	    android:layout_alignRight="@+id/resultview1"
 	    android:layout_marginTop="20dp"
+	    android:editable="false"
 	    android:ems="5" />
 	
 	<EditText
 	    android:id="@+id/editText6"
-	    android:editable="false"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignBaseline="@+id/resultview7"
 	    android:layout_alignBottom="@+id/resultview7"
-	    android:layout_centerHorizontal="true"
+	    android:layout_alignLeft="@+id/editText5"
+	    android:layout_alignRight="@+id/editText5"
 	    android:layout_marginTop="20dp"
+	    android:editable="false"
 	    android:ems="5" />
 	
 	<EditText
 	    android:id="@+id/editText7"
-	    android:editable="false"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignBaseline="@+id/resultview8"
 	    android:layout_alignBottom="@+id/resultview8"
-	    android:layout_centerHorizontal="true"
+	    android:layout_alignLeft="@+id/editText6"
+	    android:layout_alignRight="@+id/editText6"
 	    android:layout_marginTop="20dp"
+	    android:editable="false"
 	    android:ems="5" />
 
 	<Button

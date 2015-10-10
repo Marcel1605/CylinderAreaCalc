@@ -37,8 +37,48 @@ public class ResultActivity extends Activity implements OnClickListener{
 	  		String uebergebeneHoehe = bundleExtras.getString("eingabeHoehe");
 	  		EditText et2 = (EditText) findViewById(R.id.editText2);
 	  		et2.setText(uebergebeneHoehe);
-	}
 	
+	
+	//Werte von String in Double umwandeln
+		  String r = et1.getText().toString(); 
+		  double radius = Double.parseDouble(r);
+		  String h = et2.getText().toString();
+		  double hoehe = Double.parseDouble(h);
+	
+	//Berechnungen durchführen
+		  double _umfang = 2*radius*Math.PI;
+		  double _grundflaeche = radius*radius*Math.PI;
+		  double _mantelflaeche = 2*radius*hoehe*Math.PI;
+		  double _oberflaeche = 2*_grundflaeche+_mantelflaeche;
+		  double _volumen = Math.PI*radius*radius*hoehe;
+		  
+	//Ergebnisse runden
+		  _umfang = Math.round(_umfang*1000)/1000.0;
+		  _grundflaeche = Math.round(_grundflaeche*1000)/1000.0;
+		  _mantelflaeche = Math.round(_mantelflaeche*1000)/1000.0;
+		  _oberflaeche = Math.round(_oberflaeche*1000)/1000.0;
+		  _volumen = Math.round(_volumen*1000)/1000.0;
+		  
+	//Werte von Double in String umwandeln
+		  String umfang = String.valueOf(_umfang);
+		  String grundflaeche = String.valueOf(_grundflaeche);
+		  String mantelflaeche = String.valueOf(_mantelflaeche);
+		  String oberflaeche = String.valueOf(_oberflaeche);
+		  String volumen = String.valueOf(_volumen);
+
+	//Werte zur Anzeige bringen
+		  EditText et3 = (EditText) findViewById(R.id.editText3);
+	  	  et3.setText(umfang);
+	  	  EditText et4 = (EditText) findViewById(R.id.editText4);
+	  	  et4.setText(grundflaeche);
+	  	  EditText et5 = (EditText) findViewById(R.id.editText5);
+	  	  et5.setText(mantelflaeche);
+	  	  EditText et6 = (EditText) findViewById(R.id.editText6);
+	  	  et6.setText(oberflaeche);
+	  	  EditText et7 = (EditText) findViewById(R.id.editText7);
+	  	  et7.setText(volumen);
+	  	  		  	
+	}
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
