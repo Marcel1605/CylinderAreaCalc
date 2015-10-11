@@ -1,67 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/scrollView1"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/helpview2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/helpview5"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/zylinder_bild" />
+
+        <ImageView
+            android:id="@+id/helpview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/helpview2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/zylinder_formeln" />
+
+        <TextView
+            android:id="@+id/helpview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/helpview1"
+            android:layout_marginTop="10dp"
+            android:text="@string/zylinderdefinition_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/helpview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Allgemeine Infos"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/helpview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/helpview3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Bedienungshilfe"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/helpview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/helpview4"
-            android:layout_marginRight="17dp" >
+            android:layout_marginTop="10dp"
+            android:text="@string/bedienungshilfe_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
 
-	<RelativeLayout 
-    	android:id="@+id/RelativeLayout1"
-    	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:orientation="vertical" >
-
-    	<ImageView
-        	android:id="@+id/helpview2"
-        	android:layout_width="wrap_content"
-       	 	android:layout_height="wrap_content"
-        	android:layout_below="@+id/helpview5"
-        	android:layout_marginTop="20dp"
-        	android:layout_alignParentBottom="true"
-        	android:layout_alignParentLeft="true"
-        	android:src="@drawable/zylinder_bild" />
-
-    	<TextView
-        	android:id="@+id/helpview3"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-       		android:layout_below="@+id/helpview1"
-        	android:layout_alignParentLeft="true"
-        	android:layout_marginTop="10dp"
-        	android:text="@string/zylinderdefinition_text"
-        	android:textAppearance="?android:attr/textAppearanceMedium" />
-
-   	 	<TextView
-        	android:id="@+id/helpview1"
-         	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentTop="true"
-        	android:layout_centerHorizontal="true"
-        	android:text="Allgemeine Infos"
-        	android:textAppearance="?android:attr/textAppearanceLarge" />
-    
-        <TextView
-        	android:id="@+id/helpview4"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_below="@+id/helpview3"
-        	android:layout_centerHorizontal="true"
-        	android:layout_marginTop="20dp"
-        	android:text="Bedienungshilfe"
-        	android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <TextView
-        	android:id="@+id/helpview5"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_below="@+id/helpview4"
-        	android:layout_alignParentLeft="true"
-        	android:layout_marginTop="10dp"
-        	android:text="@string/bedienungshilfe_text"
-        	android:textAppearance="?android:attr/textAppearanceMedium" />
-      
-	</RelativeLayout>
- </ScrollView>
+</ScrollView>

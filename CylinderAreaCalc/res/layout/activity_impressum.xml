@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ResultActivity" >
+
+    <TextView
+        android:id="@+id/impressumview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Impressum"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/impressumview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/impressumview1"
+        android:layout_marginTop="15dp"
+        android:text="Vorname: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/impressumview3"
+        android:layout_marginTop="10dp"
+        android:text="Firma: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/impressumview2"
+        android:layout_alignBottom="@+id/impressumview2"
+        android:layout_toRightOf="@+id/impressumview2"
+        android:text="Konstantin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/impressumview4"
+        android:layout_toRightOf="@+id/impressumview3"
+        android:text="20 Jahre"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/impressumview4"
+        android:layout_alignBottom="@+id/impressumview4"
+        android:layout_toRightOf="@+id/impressumview4"
+        android:text="SAP SE"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/impressumview2"
+        android:layout_marginTop="10dp"
+        android:text="Nachname: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/impressumview8"
+        android:layout_marginTop="10dp"
+        android:text="Alter: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/impressumview3"
+        android:layout_toRightOf="@+id/impressumview8"
+        android:text="Pleschek"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/impressumview16"
+        android:layout_below="@+id/impressumview13"
+        android:layout_marginTop="10dp"
+        android:text="Firma: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/impressumview15"
+        android:layout_below="@+id/impressumview15"
+        android:layout_marginTop="10dp"
+        android:text="Alter: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/impressumview16"
+        android:layout_alignBottom="@+id/impressumview16"
+        android:layout_toRightOf="@+id/impressumview16"
+        android:text="23 Jahre"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/impressumview15"
+        android:layout_toRightOf="@+id/impressumview10"
+        android:text="Marcel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/impressumview16"
+        android:layout_toRightOf="@+id/impressumview15"
+        android:text="Keller"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/impressumview11"
+        android:layout_alignBottom="@+id/impressumview11"
+        android:layout_toRightOf="@+id/impressumview11"
+        android:text="SoftProject GmbH"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/impressumview15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/impressumview1"
+        android:layout_below="@+id/impressumview10"
+        android:layout_marginTop="10dp"
+        android:text="Nachname: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/impressumview11"
+        android:layout_alignRight="@+id/impressumview8"
+        android:layout_alignTop="@+id/impressumview10"
+        android:adjustViewBounds="true"
+        android:src="@drawable/pic_marci" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/impressumview10"
+        android:layout_alignTop="@+id/impressumview5"
+        android:layout_toRightOf="@+id/impressumview13"
+        android:adjustViewBounds="true"
+        android:src="@drawable/pic_konsti" />
+
+    <TextView
+        android:id="@+id/impressumview10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/impressumview15"
+        android:layout_below="@+id/impressumview7"
+        android:layout_marginTop="22dp"
+        android:text="Vorname: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/impressumview11"
+        android:src="@drawable/dhbw" />
+
+</RelativeLayout>

@@ -7,13 +7,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class HelpActivity extends Activity {
+public class ImpressumActivity extends Activity {
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_help);
+		setContentView(R.layout.activity_impressum);
 	}
 
 	// Menüleiste mit Hilfe-Icon und Impressum
@@ -31,14 +31,14 @@ public class HelpActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.help_button:
-			// Activity bereits geöffnet, deshalb kein erneuter Aufruf der
-			// HelpActivity an dieser Stelle
+			Intent intent1 = new Intent(this, HelpActivity.class);
+			startActivity(intent1);
 			return true;
-			// Impressum Activity aufrufen
 
+			// Impressum Activity aufrufen
 		case R.id.impressum_button:
-			Intent intent2 = new Intent(this, ImpressumActivity.class);
-			startActivity(intent2);
+			// Activity bereits geöffnet, deshalb kein erneuter Aufruf der
+			// Activity Impressum
 			return true;
 
 		default:
