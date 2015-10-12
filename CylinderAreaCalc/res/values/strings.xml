@@ -5,5 +5,6 @@
     <string name="help_button_title">Hilfe</string>
     <string name="button_impressum">Impressum</string>
     <string name="zylinderdefinition_text">Ein Zylinder ist ein Körper, der von 2 kongruenten, parallelen, krummlinig begrenzten (Grund-)Flächen und der sie verbindenden Mantelfläche begrenzt wird. Sonderfälle sind der gerade und der schiefe Kreiszylinder</string>
-    <string name="bedienungshilfe_text">In die vorhergesehenen Felder Radius und Höhe, die entsprechenden Anageben des Zylinders eintragen. Zum Berechnen der Größen Volumen, Oberfläche, Mantelfläche, Grundfläche und Umfang den Berechnen-Button betätigen. Nach der Anzeige der Ergebnisse kann zwischen einer komplett neuen Berechnung (Neue Berechnung-Button) oder einer Korrektur der Daten (Zurück-Button) gewählt werden. In zweiten Fall können die Werte mit Hilfe des Felder-Zurücksetzen-Buttons gelöscht werden</string>
+    <string name="bedienungshilfe_text">In die vorhergesehenen Felder Radius und Höhe, die entsprechenden Angaben des Zylinders eintragen. Zum Berechnen der Größen Volumen, Oberfläche, Mantelfläche, Grundfläche und Umfang den Berechnen-Button betätigen. Nach der Anzeige der Ergebnisse kann zwischen einer komplett neuen Berechnung (Neue Berechnung-Button) oder einer Korrektur der Daten (Zurück-Button) gewählt werden. In zweiten Fall können die Werte mit Hilfe des Felder-Zurücksetzen-Buttons gelöscht werden</string>
+
 </resources>
