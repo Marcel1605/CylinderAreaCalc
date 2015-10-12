@@ -30,7 +30,7 @@ public final class R {
         public static final int button2=0x7f070023;
         public static final int editText1=0x7f07001f;
         public static final int editText2=0x7f070021;
-        public static final int editText3=0x7f07002c;
+        public static final int editText3=0x7f070027;
         public static final int editText4=0x7f07002d;
         public static final int editText5=0x7f07002e;
         public static final int editText6=0x7f07002f;
@@ -64,11 +64,11 @@ public final class R {
         public static final int resultview1=0x7f070024;
         public static final int resultview2=0x7f070025;
         public static final int resultview3=0x7f070026;
-        public static final int resultview4=0x7f070027;
+        public static final int resultview4=0x7f070029;
         public static final int resultview5=0x7f070028;
-        public static final int resultview6=0x7f070029;
-        public static final int resultview7=0x7f07002a;
-        public static final int resultview8=0x7f07002b;
+        public static final int resultview6=0x7f07002a;
+        public static final int resultview7=0x7f07002b;
+        public static final int resultview8=0x7f07002c;
         public static final int scrollView1=0x7f070000;
         public static final int textView1=0x7f07001d;
         public static final int textView2=0x7f07001e;

@@ -14,51 +14,24 @@
         android:text="Ergebnisse anzeigen"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/resultview2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="70dp"
-        android:text="Radius:" />
-
-    <TextView
-        android:id="@+id/resultview3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/resultview2"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/editText1"
-        android:text="Höhe:" />
-
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/resultview2"
         android:layout_alignBottom="@+id/resultview2"
-        android:layout_toRightOf="@+id/resultview2"
-        android:editable="false"
-        android:ems="5" />
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:editable="false" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/resultview3"
-        android:layout_toRightOf="@+id/resultview3"
-        android:editable="false"
-        android:ems="5" />
-
-    <TextView
-        android:id="@+id/resultview4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="40dp"
-        android:text="Umfang:" />
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignParentRight="true"
+        android:editable="false" />
 
     <TextView
         android:id="@+id/resultview5"
@@ -102,10 +75,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/resultview4"
         android:layout_alignBottom="@+id/resultview4"
-        android:layout_alignRight="@+id/resultview1"
+        android:layout_alignParentRight="true"
         android:layout_toRightOf="@+id/resultview6"
-        android:editable="false"
-        android:ems="5" />
+        android:editable="false" />
 
     <EditText
         android:id="@+id/editText4"
@@ -114,10 +86,9 @@
         android:layout_alignBaseline="@+id/resultview5"
         android:layout_alignBottom="@+id/resultview5"
         android:layout_alignLeft="@+id/editText3"
-        android:layout_alignRight="@+id/resultview1"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:editable="false"
-        android:ems="5" />
+        android:editable="false" />
 
     <EditText
         android:id="@+id/editText5"
@@ -126,10 +97,9 @@
         android:layout_alignBaseline="@+id/resultview6"
         android:layout_alignBottom="@+id/resultview6"
         android:layout_alignLeft="@+id/editText4"
-        android:layout_alignRight="@+id/resultview1"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:editable="false"
-        android:ems="5" />
+        android:editable="false" />
 
     <EditText
         android:id="@+id/editText6"
@@ -138,10 +108,9 @@
         android:layout_alignBaseline="@+id/resultview7"
         android:layout_alignBottom="@+id/resultview7"
         android:layout_alignLeft="@+id/editText5"
-        android:layout_alignRight="@+id/editText5"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:editable="false"
-        android:ems="5" />
+        android:editable="false" />
 
     <EditText
         android:id="@+id/editText7"
@@ -150,10 +119,9 @@
         android:layout_alignBaseline="@+id/resultview8"
         android:layout_alignBottom="@+id/resultview8"
         android:layout_alignLeft="@+id/editText6"
-        android:layout_alignRight="@+id/editText6"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:editable="false"
-        android:ems="5" />
+        android:editable="false" />
 
     <Button
         android:id="@+id/backbutton1"
@@ -172,5 +140,32 @@
         android:layout_alignBottom="@+id/backbutton1"
         android:layout_toRightOf="@+id/backbutton1"
         android:text="Neue Berechnung" />
+
+    <TextView
+        android:id="@+id/resultview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resultview1"
+        android:layout_marginTop="27dp"
+        android:text="Radius:" />
+
+    <TextView
+        android:id="@+id/resultview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resultview3"
+        android:layout_marginTop="60dp"
+        android:text="Umfang:" />
+
+    <TextView
+        android:id="@+id/resultview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resultview2"
+        android:layout_marginTop="20dp"
+        android:text="Höhe:" />
 
 </RelativeLayout>
