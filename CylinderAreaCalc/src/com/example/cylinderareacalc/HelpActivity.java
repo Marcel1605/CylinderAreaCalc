@@ -39,6 +39,7 @@ public class HelpActivity extends Activity {
 		case R.id.impressum_button:
 			Intent intent2 = new Intent(this, ImpressumActivity.class);
 			startActivity(intent2);
+			finish();
 			return true;
 
 		default:

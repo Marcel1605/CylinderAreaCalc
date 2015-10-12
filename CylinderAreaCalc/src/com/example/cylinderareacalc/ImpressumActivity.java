@@ -33,6 +33,7 @@ public class ImpressumActivity extends Activity {
 		case R.id.help_button:
 			Intent intent1 = new Intent(this, HelpActivity.class);
 			startActivity(intent1);
+			finish();
 			return true;
 
 			// Impressum Activity aufrufen
