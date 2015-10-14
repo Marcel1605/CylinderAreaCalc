@@ -14,7 +14,7 @@ import android.view.Menu;
  */
 
 public class StartActivity extends Activity {
-	private static int zeit = 2000;
+	private static int zeit = 3000;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

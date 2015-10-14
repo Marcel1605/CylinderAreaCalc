@@ -23,7 +23,7 @@ public final class R {
     public static final class id {
         public static final int RelativeLayout1=0x7f070001;
         public static final int TextView01=0x7f070010;
-        public static final int TextView17=0x7f070017;
+        public static final int TextView17=0x7f070015;
         public static final int backbutton1=0x7f070031;
         public static final int backbutton2=0x7f070032;
         public static final int button1=0x7f070022;
@@ -42,16 +42,16 @@ public final class R {
         public static final int helpview4=0x7f070007;
         public static final int helpview5=0x7f070003;
         public static final int helpview6=0x7f070004;
-        public static final int imageView1=0x7f07001b;
+        public static final int imageView1=0x7f070017;
         public static final int imageView2=0x7f07001a;
-        public static final int imageView3=0x7f070019;
+        public static final int imageView3=0x7f07001b;
         public static final int impressum_button=0x7f070034;
         public static final int impressumview1=0x7f070008;
-        public static final int impressumview10=0x7f070016;
+        public static final int impressumview10=0x7f070018;
         public static final int impressumview11=0x7f070011;
-        public static final int impressumview12=0x7f070015;
+        public static final int impressumview12=0x7f070019;
         public static final int impressumview13=0x7f070013;
-        public static final int impressumview14=0x7f070018;
+        public static final int impressumview14=0x7f070016;
         public static final int impressumview15=0x7f070014;
         public static final int impressumview16=0x7f070012;
         public static final int impressumview2=0x7f070009;
