@@ -24,18 +24,18 @@ public final class R {
         public static final int RelativeLayout1=0x7f070001;
         public static final int TextView01=0x7f070010;
         public static final int TextView17=0x7f070015;
-        public static final int backbutton1=0x7f070031;
-        public static final int backbutton2=0x7f070032;
-        public static final int button1=0x7f070022;
-        public static final int button2=0x7f070023;
-        public static final int editText1=0x7f07001f;
-        public static final int editText2=0x7f070021;
-        public static final int editText3=0x7f070027;
-        public static final int editText4=0x7f07002d;
-        public static final int editText5=0x7f07002e;
-        public static final int editText6=0x7f07002f;
-        public static final int editText7=0x7f070030;
-        public static final int help_button=0x7f070033;
+        public static final int backbutton1=0x7f070030;
+        public static final int backbutton2=0x7f070031;
+        public static final int button1=0x7f070021;
+        public static final int button2=0x7f070022;
+        public static final int editText1=0x7f07001e;
+        public static final int editText2=0x7f070020;
+        public static final int editText3=0x7f070026;
+        public static final int editText4=0x7f07002c;
+        public static final int editText5=0x7f07002d;
+        public static final int editText6=0x7f07002e;
+        public static final int editText7=0x7f07002f;
+        public static final int help_button=0x7f070032;
         public static final int helpview1=0x7f070006;
         public static final int helpview2=0x7f070002;
         public static final int helpview3=0x7f070005;
@@ -45,7 +45,7 @@ public final class R {
         public static final int imageView1=0x7f070017;
         public static final int imageView2=0x7f07001a;
         public static final int imageView3=0x7f07001b;
-        public static final int impressum_button=0x7f070034;
+        public static final int impressum_button=0x7f070033;
         public static final int impressumview1=0x7f070008;
         public static final int impressumview10=0x7f070018;
         public static final int impressumview11=0x7f070011;
@@ -61,19 +61,18 @@ public final class R {
         public static final int impressumview6=0x7f07000d;
         public static final int impressumview7=0x7f07000e;
         public static final int impressumview8=0x7f07000f;
-        public static final int resultview1=0x7f070024;
-        public static final int resultview2=0x7f070025;
-        public static final int resultview3=0x7f070026;
-        public static final int resultview4=0x7f070029;
-        public static final int resultview5=0x7f070028;
-        public static final int resultview6=0x7f07002a;
-        public static final int resultview7=0x7f07002b;
-        public static final int resultview8=0x7f07002c;
+        public static final int resultview1=0x7f070023;
+        public static final int resultview2=0x7f070024;
+        public static final int resultview3=0x7f070025;
+        public static final int resultview4=0x7f070028;
+        public static final int resultview5=0x7f070027;
+        public static final int resultview6=0x7f070029;
+        public static final int resultview7=0x7f07002a;
+        public static final int resultview8=0x7f07002b;
         public static final int scrollView1=0x7f070000;
         public static final int textView1=0x7f07001d;
-        public static final int textView2=0x7f07001e;
         public static final int textView3=0x7f07001c;
-        public static final int textView4=0x7f070020;
+        public static final int textView4=0x7f07001f;
     }
     public static final class layout {
         public static final int activity_help=0x7f030000;
@@ -90,6 +89,13 @@ public final class R {
         public static final int bedienungshilfe_text=0x7f040004;
         public static final int button_impressum=0x7f040002;
         public static final int help_button_title=0x7f040001;
+        public static final int mainact_berechnenKnopf=0x7f040008;
+        public static final int mainact_felderZuruecksetzenKnopf=0x7f040009;
+        public static final int mainact_hintText1=0x7f04000a;
+        public static final int mainact_hintText2=0x7f04000b;
+        public static final int mainact_hoehe=0x7f040007;
+        public static final int mainact_radius=0x7f040006;
+        public static final int mainact_ueberschrift=0x7f040005;
         public static final int zylinderdefinition_text=0x7f040003;
     }
     public static final class style {
