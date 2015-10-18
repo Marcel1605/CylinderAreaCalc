@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
 
 				// User benachrichtigen falls eines der Eingabefelder mit der
 				// Höhe 0 ausgefüllt wurde -->unzulässig
-				else if (text1.equals("0") || text2.equals("0")) {
+				else if (text1.equals("0") || text2.equals("0") || text1.equals("0.0") || text2.equals("0.0") || text1.equals("00") || text2.equals("00") || text1.equals("0.00") || text2.equals("0.00") || text1.equals("00.0") || text2.equals("00.0") || text1.equals("000") || text2.equals("000") || text1.equals("0000") || text2.equals("0000") || text1.equals("000.") || text2.equals("000.")) {
 					Toast toast2 = Toast
 							.makeText(
 									getApplicationContext(),
