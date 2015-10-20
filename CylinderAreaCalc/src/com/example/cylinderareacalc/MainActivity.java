@@ -44,37 +44,46 @@ public class MainActivity extends Activity {
 				// User benachrichtigen falls dieser ein Eingabefeld nicht
 				// ausgefüllt hat
 				if (text1 == null || text2 == null || text1.isEmpty()
-						|| text2.isEmpty()) {
+						|| text2.isEmpty() || text1.equals(".") || text2.equals(".")) {
 					Toast toast1 = Toast
 							.makeText(
 									getApplicationContext(),
-									"Bitte sowohl für Radius als auch für Höhe Eingaben vornehmen",
+									"Bitte geben Sie sowohl für Radius als auch für Höhe zulässige Werte ein",
 									Toast.LENGTH_LONG);
 					toast1.show();
 				}
 
 				// User benachrichtigen falls eines der Eingabefelder mit der
 				// Höhe 0 ausgefüllt wurde -->unzulässig
-				else if (text1.equals("0") || text2.equals("0") || text1.equals("0.0") || text2.equals("0.0") || text1.equals("00") || text2.equals("00") || text1.equals("0.00") || text2.equals("0.00") || text1.equals("00.0") || text2.equals("00.0") || text1.equals("000") || text2.equals("000") || text1.equals("0000") || text2.equals("0000") || text1.equals("000.") || text2.equals("000.")) {
-					Toast toast2 = Toast
-							.makeText(
-									getApplicationContext(),
-									"Die Berechnung kann für die Eingabe 0 nicht durchgeführt werden",
-									Toast.LENGTH_LONG);
-					toast2.show();
+				else if (!(text1 == null || text2 == null || text1.isEmpty()
+						|| text2.isEmpty() || text1.equals(".") || text2.equals("."))) {
+					String s1 = text1.toString();
+					double d1 = Double.parseDouble(s1);
+
+					String s2 = text2.toString();
+					double d2 = Double.parseDouble(s2);
+
+					if (d1 == 0 || d2 == 0) {
+						Toast toast2 = Toast
+								.makeText(
+										getApplicationContext(),
+										"Die Berechnung kann für die Eingabe 0 nicht durchgeführt werden",
+										Toast.LENGTH_LONG);
+						toast2.show();
+					} else {
+						Intent intent = new Intent(MainActivity.this,
+								ResultActivity.class);
+
+						intent.putExtra("eingabeRadius", text1);
+						intent.putExtra("eingabeHoehe", text2);
+
+						startActivityForResult(intent, 69);
+					}
 				}
 
 				// Übergabe der Eingabewerte an ResultActivity bei korrekten
 				// Angaben
-				else {
-					Intent intent = new Intent(MainActivity.this,
-							ResultActivity.class);
 
-					intent.putExtra("eingabeRadius", text1);
-					intent.putExtra("eingabeHoehe", text2);
-
-					startActivityForResult(intent, 69);
-				}
 			}
 		});
 		_button2.setOnClickListener(new OnClickListener() {
